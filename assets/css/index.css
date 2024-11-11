@@ -109,48 +109,6 @@ main {
     min-width: 450px;
     max-width: 450px;
 }
-#box-form {
-    display: none;
-    background-color: #FFFF;
-    width: 543px;
-    height: 296px;
-    position: fixed;
-    z-index: 1000;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    flex-direction: column;
-}
-#overlay {
-    display: none; /* Overlay escondido inicialmente */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-.close-btn {
-    position: absolute;
-    right: 20px;
-}
-.box-form-informations {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-      gap: 10px;
-}
-.box-form-informations > div {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-.box-form-informations > div > input {
-    padding: 10px;
-    border: 1px solid #d1d1d1;
-    border-radius: 10px;
-}
 
 @media (max-width: 769px) {
     .nav-bar{
