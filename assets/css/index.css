@@ -123,4 +123,7 @@ main {
     .main-content {
         flex-direction: column !important;
     }
+    .team-content img, .main-content img {
+        min-width: 100%;
+    }
 }
