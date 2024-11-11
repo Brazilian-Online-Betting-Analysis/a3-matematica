@@ -32,7 +32,7 @@
             <p>Está preparado para conhecer o risco que corre? Preencha os campos abaixo e descubra em segundos qual a
                 sua chance de perder tudo. Você pode se surpreender!</p>
             <div class="flex justify-center items-center pt-4">
-                <button
+                <button id="btn-form" onclick="openForm()"
                     class="flex text-sm gap-2 items-center justify-start bg-white border border-zinc-100 rounded-lg px-4 py-2 text-gray-400 bg-white">
                     Insira seu nome para começar
 
@@ -46,6 +46,35 @@
         </div>
     </header>
     <main>
+        <div id="overlay"></div>
+        <section id="box-form" class="box-form">
+            <button type="button" class="close-btn" onclick="fecharFormulario()">X</button>
+            <div class="box-form-header">
+                <p class="box-form-title">Vamos lá ?</p>
+                <p>Insira abaixo as seguintes informações</p>
+            </div>
+
+            <div class="box-form-informations">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="" placeholder="Seu nome">
+                </div>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="" placeholder="Seu nome">
+                </div>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="" placeholder="Seu nome">
+                </div>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="" placeholder="Seu nome">
+                </div>
+                <button type="button" onclick="armazenarInformacoes()">Enviar</button>
+            </div>
+
+        </section>
         <div id="por-que" class="main-content">
             <div class="text-content">
                 <h2>Por que?</h2>
@@ -62,7 +91,7 @@
         </div>
         <div id="como" class="main-content inv">
             <div class="text-content">
-                <h2>Por que?</h2>
+                <h2>Como?</h2>
                 <p>Saber a probabilidade de quanto você pode perder em um jogo de aposta é essencial para tomar decisões
                     mais informadas e gerenciar seu risco. Essa previsão ajuda a entender o valor esperado das apostas e
                     o quanto você está realmente disposto a investir (ou perder) antes de alcançar seus objetivos
@@ -72,7 +101,7 @@
                     apostas sustentáveis, definir limites de perda e até estabelecer um orçamento para apostas, o que
                     ajuda a evitar comportamentos de risco ou viciantes.</p>
             </div>
-            <img src="./assets/img/Dinheiro.jpg" alt="Imgem Dinheiro">
+            <img src="./assets/img/Imagem-como.jpg" alt="Imgem Dinheiro">
         </div>
         <div id="time" class="team-content">
             <div class="team-content__text-content">
@@ -83,12 +112,12 @@
                     analisar variáveis ​​como faixa etária, classe social e gênero, para oferecer insights que possam
                     contribuir para a tomada de decisões seguras e conscientes no setor de apostas.</p>
             </div>
-            <img src="./assets/img/Dinheiro.jpg" alt="Imgem Dinheiro">
+            <img src="./assets/img/grupo-de-facebook.jpg" alt="Imgem Dinheiro">
         </div>
     </main>
     <footer>
 
     </footer>
+    <script src="assets/Js/index.js"></script>
 </body>
-
 </html>
